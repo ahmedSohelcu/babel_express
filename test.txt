@@ -1,0 +1,13 @@
+    "build": "/node_modules/.bin/babel server.js --out-dir lib",
+       "test": "echo \"Error: no test specified\" && exit 1",
+    "start1": "node server.js",
+    "build": "/node_modules/.bin/babel server.js --out-dir lib",
+    "start": "rm -rf ./node_modules/.cache/babel-loader && nodemon lib/server.js"
+
+
+        "test": "echo \"Error: no test specified\" && exit 1",
+    "start1": "node server.js",
+    "start00": "nodemon lib/server.js",
+    "start": "rm -rf ./node_modules/.cache/babel-loader && nodelib/server.js"
+
+    npx kill-port 3000 -- to kill port 3000

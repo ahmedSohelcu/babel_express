@@ -1,0 +1,32 @@
+{
+  "name": "babelgraphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start1": "node server.js",
+    "start00": "nodemon lib/server.js",
+    "build": "./node_modules/.bin/babel server.js --out-dir lib",
+    "start": "rm -rf ./node_modules/.cache/babel-loader && nodemon lib/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/node": "^7.16.8",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-plugin-import-graphql": "^2.8.1",
+    "nodemon": "^2.0.15"
+  }
+}
